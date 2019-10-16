@@ -1,0 +1,14 @@
+.ContentApp {
+    background-color: lightgray;
+}
+
+.ContentApp input {
+    display:inline-block;
+}
+.ContentApp p {
+    display: inline-block;
+}
+
+.ShowDecoration p {
+    text-decoration:underline;
+}
