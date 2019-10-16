@@ -1,10 +1,11 @@
 import React from 'react';
-
-function handleClick(event) {
-  console.log('I clicked on p', event.currentTarget);
-}
+import './Header.css';
 
 export function Header() {
-  return (<div className='header'><p onClick={handleClick}>this is the header</p></div>);
+  return (
+    <div className='header'>
+
+    </div>
+  );
 }
 
