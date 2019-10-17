@@ -1,0 +1,14 @@
+.profile-container {
+    /* display: inline; */
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  
+  .profile-icon {
+    height: 100%;
+  }
+  
+  .profile-icon img {
+    height: 40px;
+  }
