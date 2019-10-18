@@ -1,0 +1,19 @@
+.menu-pages {
+  position: absolute;
+  background: #719196;
+  top: 55px;
+  left: 5px;
+  padding-top: 40px;
+  max-width: 300px;
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  background: #719196;
+  top: -4px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}

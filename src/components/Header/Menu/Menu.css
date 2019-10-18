@@ -1,20 +1,6 @@
 .menu-container {
-    display: inline-block;
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .menu-button {
-    height: 40px;
-    width: 40px;
-    background: #dfcdc3;
-    border-radius: 100%;
-  }
-  
-  .menu-button img {
-    margin-top: 8px;
-    margin-left: 8px;
-    height: 25px;
-  }
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: relative;
+}

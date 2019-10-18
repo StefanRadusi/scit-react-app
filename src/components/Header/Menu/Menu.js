@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Menu.css';
+import { MenuPages } from './MenuPages/MenuPages';
+import { MenuButton } from './MenuButton/MenuButton';
 
-export function Menu() {
+export class Menu extends Component {
+  state = {
+    showMenuPages: false,
+  };
+
+  toggleMenuPages = () => {
+    this.setState({ showMenuPages: !this.state.showMenuPages });
+  };
+
+  render() {
     return (
-        <div className='menu-container'>
-            <div className='menu-button' id='menu-button'>
-                <img src='https://www.stickpng.com/assets/images/588a6507d06f6719692a2d15.png'></img>
-            </div>
-        </div>
-  
+      <div className="menu-container">
+        <MenuButton toggleMenuPages={this.toggleMenuPages}/>
+        <MenuPages show={this.state.showMenuPages} />
+      </div>
     );
   }
-  
-  
+}
