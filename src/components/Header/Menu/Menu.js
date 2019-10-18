@@ -8,15 +8,19 @@ export class Menu extends Component {
     showMenuPages: false,
   };
 
-  toggleMenuPages = () => {
-    this.setState({ showMenuPages: !this.state.showMenuPages });
+  openMenuPages = () => {
+    this.setState({ showMenuPages: true });
   };
+
+  closeMenuPages = () => {
+    this.setState({ showMenuPages: false });
+  }
 
   render() {
     return (
       <div className="menu-container">
-        <MenuButton toggleMenuPages={this.toggleMenuPages}/>
-        <MenuPages show={this.state.showMenuPages} />
+        <MenuButton openMenuPages={this.openMenuPages} />
+        <MenuPages show={this.state.showMenuPages} closeMenuPages={this.closeMenuPages} changePage={this.props.changePage}/>
       </div>
     );
   }

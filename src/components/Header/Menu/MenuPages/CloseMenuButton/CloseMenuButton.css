@@ -1,0 +1,11 @@
+.close-menu-button {
+  position: absolute;
+  top: -16px;
+  right: 0px;
+  background: #dfcdc3;
+  color: black;
+  text-align: center;
+  padding-bottom: 2px;
+  width: 16px;
+  cursor: default;
+}

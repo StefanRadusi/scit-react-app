@@ -6,7 +6,7 @@ export function MenuButton(props) {
     <div
       className="menu-button"
       id="menu-button"
-      onClick={props.toggleMenuPages}
+      onClick={props.openMenuPages}
     >
       <img alt="img" src="https://www.stickpng.com/assets/images/588a6507d06f6719692a2d15.png" />
     </div>

@@ -1,0 +1,10 @@
+.page-button {
+  color: white;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.page-button:hover {
+  text-decoration: underline;
+}
