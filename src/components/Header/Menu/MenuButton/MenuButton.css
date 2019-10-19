@@ -3,6 +3,7 @@
   width: 40px;
   background: #dfcdc3;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .menu-button img {

@@ -1,10 +1,18 @@
 import React from "react";
-import Page from "../MenuPages/Page/Page";
+import PageNumberButoon from "./PageNumberButoon/PageNumberButton";
 import "./MenuPages.css";
 
-const MenuPages = ({ pages, children }) => {
-  const pageComponent = pages.map((id, index, pageNumber) => {
-    return <Page key={id} pageNumber={pageNumber} index={index} />;
+const MenuPages = ({ pages, children, renderPage, closeMenu }) => {
+  const pageComponent = pages.map(({ id, pageNumber, pageText }) => {
+    return (
+      <PageNumberButoon
+        key={id}
+        pageNumber={pageNumber}
+        pageText={pageText}
+        renderPage={renderPage}
+        closeMenu={closeMenu}
+      />
+    );
   });
   return (
     <div className="menu-pages-container">

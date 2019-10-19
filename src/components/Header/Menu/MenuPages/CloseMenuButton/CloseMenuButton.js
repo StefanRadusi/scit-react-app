@@ -1,7 +1,7 @@
 import React from "react";
-import "./CloseMenu.css";
+import "./CloseMenuButton.css";
 
-export default function CloseMenu({ closeMenu }) {
+export default function CloseMenuButton({ closeMenu }) {
   return (
     <img
       className="close"

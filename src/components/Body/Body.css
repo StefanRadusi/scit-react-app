@@ -1,0 +1,6 @@
+.page-body {
+  display: inline-block;
+  width: 100%;
+  height: calc(100% - 50 px);
+  /* position: relative; */
+}
