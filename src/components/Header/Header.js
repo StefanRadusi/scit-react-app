@@ -1,11 +1,7 @@
 import React from 'react';
 import './Header.css';
-import {Menu} from '../Menu/Menu';
 import {Profile} from '../Profile/Profile';
-
-
-
-
+import Menu from '../Menu/Menu';
 
 
 export function Header() {
@@ -14,6 +10,7 @@ export function Header() {
     <div className='header' >
       <Menu/>
       <Profile/>
+      {/* <Pages/> */}
     </div>
   );
 }

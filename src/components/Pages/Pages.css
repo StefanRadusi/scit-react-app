@@ -1,0 +1,40 @@
+.menu-pages-conatainer {
+    position: absolute;
+    background: #719196;
+    top: 55px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 100px);
+    padding-top: 40px;
+    display: block;
+    max-width: 300px;
+  }
+  
+  .arrow {
+    position: absolute;
+    background: #719196;
+    top: -4px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+  }
+ 
+  .pages {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .pages p {
+    margin: 5px 10px 20px 10px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+  
+  .show {
+    display: block;
+  }
+  
