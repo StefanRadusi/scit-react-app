@@ -1,6 +1,6 @@
 import React from 'react';
 import './Profile.css';
-import {ProfileIcon} from '../../Content/Profile/ProfileIcon/ProfileIcon';
+import {ProfileIcon} from './ProfileIcon/ProfileIcon';
 
 export function Profile (){
     return (

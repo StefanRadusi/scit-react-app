@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Profile/ProfileIcon/ProfileIcon';
+import './ProfileIcon';
 
 export function ProfileIcon () {
     return (

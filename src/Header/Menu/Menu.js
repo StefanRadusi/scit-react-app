@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Menu.css';
-import { MenuBtn } from './MenuBtn/MenuBtn.js'
-import { PagesContainer } from './Pages/PagesContainer/PagesContainer';
+import { MenuBtn } from './MenuBtn/MenuBtn.js';
+import { MenuPages } from './MenuPages/MenuPages';
 
 
 
@@ -29,7 +29,7 @@ class Menu extends Component {
             <div className='menu-container'>
                 <MenuBtn openPages={this.clickEvent}
                 />
-                {this.state.showPages ? <PagesContainer openPages = {this.clickEvent} />  : null}
+                {this.state.showPages ? <MenuPages openPages = {this.clickEvent} />  : null}
 
 
             </div>

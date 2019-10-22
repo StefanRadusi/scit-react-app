@@ -1,0 +1,6 @@
+.timerContainer {
+    width: 100px;
+    float: right;
+    border: 1px solid gray;
+    margin: 20px;
+}

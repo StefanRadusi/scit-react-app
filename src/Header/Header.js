@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from '../Menu/Menu';
-import  {Profile}  from '../../Content/Profile/Profile'
+import Menu from './Menu/Menu';
+import  {Profile}  from './Profile/Profile';
 import './Header.css';
 
 
