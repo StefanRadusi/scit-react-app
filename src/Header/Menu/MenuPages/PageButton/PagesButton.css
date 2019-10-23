@@ -30,8 +30,11 @@
     color: white;
     text-align: center;
     font-size: 25px;
-    border-bottom: 1px solid white;
+   
     padding-bottom: 10px;
+  }
+  .pages :hover{
+    text-decoration: underline;
   }
   
   .show {
