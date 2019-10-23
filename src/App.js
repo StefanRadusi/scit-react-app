@@ -1,14 +1,15 @@
-import React from 'react';
-import {Header} from './components/Header/Header.js';
+import React from "react";
+import { Header } from "./components/Header/Header.js";
+import Body from "./components/Body/Body";
+import "./App.css";
 
-import './App.css';
-
-// 
+//
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
+      <Body />
       {/* <Pages /> */}
     </div>
   );

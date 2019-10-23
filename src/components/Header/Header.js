@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import {Menu} from './Menu/Menu';
-import {Profile} from './Profile/Profile';
+import {Profile} from './Menu/MenuContainer/Profile/Profile';
 
 export function Header() {
   return (
