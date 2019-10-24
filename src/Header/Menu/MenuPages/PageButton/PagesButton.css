@@ -29,15 +29,18 @@
     margin: 5px 10px 20px 10px;
     color: white;
     text-align: center;
-    font-size: 25px;
-   
+    font-size: 18px;
     padding-bottom: 10px;
   }
   .pages :hover{
     text-decoration: underline;
+    font-style: italic;
   }
   
   .show {
     display: block;
+  }
+  a:link {
+    text-decoration: none;
   }
   

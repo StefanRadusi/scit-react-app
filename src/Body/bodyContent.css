@@ -1,7 +1,10 @@
 .bodyContent {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height:calc(100% - 50px);
 }
+
 .pages {
     margin: 5px 10px 20px 10px;
     color: white;
@@ -10,3 +13,5 @@
     border-bottom: 1px solid white;
     padding-bottom: 10px;
   }
+
+ 

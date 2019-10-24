@@ -1,0 +1,12 @@
+
+#startTimerBtn {
+ display: flex;
+margin: 10px;
+background-color: #2b8cdb;
+border: 1px solid gray;
+width: 80px;
+height: 20px;
+align-items: center;
+font-weight:400;
+
+}

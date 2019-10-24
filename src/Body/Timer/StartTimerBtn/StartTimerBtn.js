@@ -3,7 +3,8 @@ import  '../DisplayNumber/DisplayNumber.css';
 
 export function StartTimerBtn({startTimer}){
     return (
-        <div className = 'displayNumber'>
+        <div className = 'displayNumber' id ="startTimerBtn">
+
             <button onClick = {startTimer} >Start</button>
         </div>
     )

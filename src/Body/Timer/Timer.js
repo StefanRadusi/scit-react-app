@@ -3,11 +3,12 @@ import "./StartTimerBtn/StartTimerBtn";
 import { StartTimerBtn } from './StartTimerBtn/StartTimerBtn';
 import { DisplayNumber } from './DisplayNumber/DisplayNumber';
 import './Timer.css'
+import {Link} from 'react-router-dom';
 
 
 class Timer extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             second1: 0,
             second2: 0,
@@ -51,8 +52,11 @@ class Timer extends Component {
 
 
     render() {
+       
+
         return (
             <div className ='timerContainer'>
+
                 <DisplayNumber 
                     displaySecond1={this.state.second1}
                     displaySecond2={this.state.second2}
@@ -60,6 +64,7 @@ class Timer extends Component {
                     displayMinute2={this.state.minute2}
                 />
                 <StartTimerBtn startTimer={this.startTimer} />
+               <Link to = "/"><button id = "goBackBtn">Go back</button></Link>
 
             </div>
         )
