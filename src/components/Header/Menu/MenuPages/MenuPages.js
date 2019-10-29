@@ -1,5 +1,6 @@
 import React from 'react';
 import './MenuPages.css';
+import {PageButton} from '../PageButton/PageButton.js';
 
 
 export function MenuPages(props) {
@@ -7,8 +8,13 @@ export function MenuPages(props) {
     props.show ? 
     <div className='menu-pages'> 	
       <div class='arrow'></div>
-      this is menu pages
+      <PageButton pageButtonName ='Home'/>
+      <PageButton pageButtonName ='Events'/>
+      <PageButton pageButtonName ='Users' />
+      <PageButton pageButtonName ='Useful' />
+      <PageButton pageButtonName ='Contact' />
+
     </div> 
     : null
-  );
+  )
 }

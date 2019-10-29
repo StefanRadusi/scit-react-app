@@ -1,0 +1,8 @@
+.pageButtonName {
+    text-align: center;
+}
+
+.pageButtonName:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
