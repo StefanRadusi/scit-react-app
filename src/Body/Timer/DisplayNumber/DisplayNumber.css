@@ -1,5 +1,8 @@
 .displayNumber {
- display: flex; 
-justify-content: center; 
+display: flex; 
+justify-content: center;
+align-items: center;
 font-weight: bold;
+width: 100px;
+left: -20px;
 }

@@ -1,8 +1,30 @@
-#timerContainer {
-    width: 100px;
+
+.timerContainer {
+    display:flex;
+    justify-content: center;
+    width: 150px;
     border: 1px solid gray;
     position: relative;
-    left: calc(45%);
-    top: calc(-35%);
+    right: -680px;
+    top: -220px;
+    font-size: 15px;
+    
 }
 
+#timer,
+#goBackBtn {
+    width: 40px;
+    height: 20px;
+}
+
+#goBackBtn {
+    position: relative;
+    top: 55px;
+    right: 70px;
+}
+
+#timer{
+    display: inline-block;
+    position: relative;
+    top: 17px;
+}

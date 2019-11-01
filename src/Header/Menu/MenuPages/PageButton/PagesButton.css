@@ -1,13 +1,13 @@
-.menu-pages-conatainer {
+.menu-pages-container {
     position: absolute;
     background: #719196;
     top: 55px;
     left: 5px;
     width: calc(100% - 10px);
-    height: calc(100% - 100px);
+    height: calc(70% - 100px);
     padding-top: 40px;
     display: block;
-    max-width: 300px;
+    max-width: 250px;
   }
   
   .arrow {
@@ -26,21 +26,24 @@
   }
   
   .pages p {
-    margin: 5px 10px 20px 10px;
+    width: 70px;
+    margin:auto;
+    padding: 10px;
     color: white;
-    text-align: center;
     font-size: 18px;
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;  
+    transition: transform 1s;  
+
   }
   .pages :hover{
     text-decoration: underline;
     font-style: italic;
+    cursor: pointer;
+    transform: scale(1.2);
   }
   
   .show {
     display: block;
   }
-  a:link {
-    text-decoration: none;
-  }
-  
+ 

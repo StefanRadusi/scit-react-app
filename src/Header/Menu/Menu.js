@@ -4,37 +4,42 @@ import { MenuBtn } from './MenuBtn/MenuBtn.js';
 import { MenuPages } from './MenuPages/MenuPages';
 
 
-
-
-
 class Menu extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
-            showPages: false,
-         
+            showPages: false
+
+        }
     }
-    }
-    clickEvent = () => {
+
+    openMenuPages = () => {
+        this.props.toggleMenuPages();
+
         this.setState({
-            showPages: !this.state.showPages
+            showPages: !this.state.showPages,
+
         });
     }
-
-
-    
     render() {
         return (
+            <div className='menu-container' 
+            >
+                <MenuBtn open={this.openMenuPages} 
+                 hideMenu = {this.props.hideMenu}
+                 />
 
-            <div className='menu-container'>
-                <MenuBtn openPages={this.clickEvent}
-                />
-                {this.state.showPages ? <MenuPages openPages = {this.clickEvent} />  : null}
+                {this.props.showMenuPages ?
 
+                    <MenuPages
+                        open = {this.openMenuPages}
+                        toggleSelectPage = {this.props.toggleSelectPage}
+
+                        selectPages = {this.props.selectPages}
+                        clickedPage = {this.props.clickedPage}
+                    /> : null}
 
             </div>
-
-
         );
     }
 }

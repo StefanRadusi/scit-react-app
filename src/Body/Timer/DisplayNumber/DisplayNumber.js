@@ -1,17 +1,10 @@
 import React from 'react'
  import './DisplayNumber.css'
 
-export function DisplayNumber({displaySecond1, displaySecond2, displayMinute1, displayMinute2}){
+export function DisplayNumber(props){
     return(
 <div className = 'displayNumber'>
-<p>{displayMinute2}</p>
-<p>{displayMinute1}</p>
-<p>:</p>
-    <p>{displaySecond2}</p>
-    <p>{displaySecond1}</p>
-
-
-
+<p>{props.displayNumber}</p>
 </div>
     )
 }

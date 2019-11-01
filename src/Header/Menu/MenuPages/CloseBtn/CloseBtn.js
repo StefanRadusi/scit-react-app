@@ -1,12 +1,17 @@
 import React from 'react'
 import './CloseBtn.css'
 
-export function CloseBtn ({openPages}){
+export function CloseBtn (props){
+    
     return (
+
+        <div id = 'close'>
+            <button id = "xButton"
+             onClick = {props.open}>X</button>
+
+        </div>
         
-            <img id='close'src='http://cdn.onlinewebfonts.com/svg/img_339941.png' 
-            alt = "x"
-            onClick = {openPages}></img>
+            
        
     )
 }

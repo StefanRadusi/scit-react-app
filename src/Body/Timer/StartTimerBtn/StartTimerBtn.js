@@ -3,9 +3,9 @@ import  '../DisplayNumber/DisplayNumber.css';
 
 export function StartTimerBtn({startTimer}){
     return (
-        <div className = 'displayNumber' id ="startTimerBtn">
+        <div className = 'displayNumber' >
 
-            <button onClick = {startTimer} >Start</button>
+            <button id ="timer" onClick = {startTimer} >Start</button>
         </div>
     )
 }

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import "./StartTimerBtn/StartTimerBtn";
 import { StartTimerBtn } from './StartTimerBtn/StartTimerBtn';
 import { DisplayNumber } from './DisplayNumber/DisplayNumber';
-import './Timer.css'
-import {Link} from 'react-router-dom';
+import '../Timer/Timer.css';
 
 
 class Timer extends Component {
@@ -19,31 +18,31 @@ class Timer extends Component {
 
     startTimer = () => {
         setInterval(() => {
-            let second1 = this.state.second1 + 1;
-            let second2 = this.state.second2;
+            let second1 = this.state.second1 ;
+            let second2 = this.state.second2+1 ;
             let minute1 = this.state.minute1;
             let minute2 = this.state.minute2
 
-            if (second1 === 9) {
-                second1 = 0;
-                second2 += 1;
+            if (second2 === 9) {
+                second2 = 0;
+                second1 += 1;
             }
 
-            if (second2 === 6) {
-                second2 = 0;
-                minute1 += 1;
-            }
-            if (minute1 === 9) {
-                minute1 = 0;
+            if (second1 === 6) {
+                second1 = 0;
                 minute2 += 1;
             }
-
             if (minute2 === 9) {
-                minute1 = 0;
-                minute2 += 1
-            }
-            if (minute2 === 6)
                 minute2 = 0;
+                minute1 += 1;
+            }
+
+            if (minute1 === 6) {
+                minute2 = 0;
+                minute1 += 1
+            }
+            if (minute1 === 6)
+                minute1 = 0;
 
             this.setState({ second1, second2, minute1, minute2 })
         }, 1000)
@@ -52,20 +51,21 @@ class Timer extends Component {
 
 
     render() {
-       
+
 
         return (
-            <div className ='timerContainer'>
+            <div className='timerContainer'>
+                
+                <DisplayNumber displayNumber={this.state.minute1} />
+                <DisplayNumber displayNumber={this.state.minute2} />
 
-                <DisplayNumber 
-                    displaySecond1={this.state.second1}
-                    displaySecond2={this.state.second2}
-                    displayMinute1={this.state.minute1}
-                    displayMinute2={this.state.minute2}
-                />
+                <p>:</p>
+                <DisplayNumber displayNumber={this.state.second1} />
+                <DisplayNumber displayNumber={this.state.second2} />
+
+                <button id="goBackBtn">Back</button >
                 <StartTimerBtn startTimer={this.startTimer} />
-               <Link to = "/"><button id = "goBackBtn">Go back</button></Link>
-
+            
             </div>
         )
     }
