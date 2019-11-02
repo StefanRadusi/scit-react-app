@@ -1,5 +1,5 @@
-import React from 'react';
-import './MenuButton.css';
+import React from "react";
+import "./MenuButton.css";
 
 export function MenuButton(props) {
   return (
@@ -8,7 +8,10 @@ export function MenuButton(props) {
       id="menu-button"
       onClick={props.toggleMenuPages}
     >
-      <img alt="img" src="https://www.stickpng.com/assets/images/588a6507d06f6719692a2d15.png" />
+      <img
+        alt="img"
+        src="https://www.stickpng.com/assets/images/588a6507d06f6719692a2d15.png"
+      />
     </div>
   );
 }

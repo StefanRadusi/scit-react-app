@@ -1,0 +1,10 @@
+.closeBtn {
+  color: red;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: rosybrown;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}

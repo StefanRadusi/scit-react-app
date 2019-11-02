@@ -1,14 +1,12 @@
-import React from 'react';
-import {Header} from './components/Header/Header.js';
+import React from "react";
+import { Header } from "./components/Header/Header.js";
 
-import './App.css';
-
-// 
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       {/* <Pages /> */}
     </div>
   );

@@ -1,14 +1,16 @@
-import React from 'react';
-import './MenuPages.css';
+import React from "react";
+import "./MenuPages.css";
+import PageButton from "./PageButton/PageButton";
+import CloseMenuButton from "../MenuPages/CloseMenuButton/CloseMenuButton";
 
+const MenuPages = ({ closeMenu, show }) => {
+  return show ? (
+    <div className="menu-pages">
+      <div className="arrow"></div>
+      <CloseMenuButton closeMenu={closeMenu} />
+      <PageButton />
+    </div>
+  ) : null;
+};
 
-export function MenuPages(props) {
-  return (
-    props.show ? 
-    <div className='menu-pages'> 	
-      <div class='arrow'></div>
-      this is menu pages
-    </div> 
-    : null
-  );
-}
+export default MenuPages;
