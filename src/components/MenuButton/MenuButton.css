@@ -1,0 +1,15 @@
+.menu-button {
+  height: 40px;
+  width: 40px;
+  background: #dfcdc3;
+  border-radius: 100%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.menu-button img {
+  margin-top: 8px;
+  margin-left: 8px;
+  height: 25px;
+}
