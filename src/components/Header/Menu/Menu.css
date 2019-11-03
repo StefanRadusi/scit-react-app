@@ -1,6 +1,7 @@
 .menu-container {
-  display: inline-block;
+  display:inline-block;
   margin-top: 5px;
   margin-left: 5px;
   position: relative;
+  width: 200px;
 }

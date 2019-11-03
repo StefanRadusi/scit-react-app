@@ -1,0 +1,17 @@
+.close-pages{
+    position:absolute;
+    display: inline-block;
+    height: 20px;
+    top:50px;
+    right:100px;
+    left:136px;
+    color:black;
+    border:2px;
+    border-color: #dfcdc3;
+}
+.close-pages:hover{
+    background-color:#94aae9;
+    cursor: pointer;
+    
+}
+

@@ -1,19 +1,24 @@
 .menu-pages {
   position: absolute;
+  display: inline-block;
   background: #719196;
-  top: 55px;
-  left: 5px;
-  padding-top: 40px;
-  max-width: 300px;
+  top: 50px;
+  left:5px;
+  right:1px;
+  line-height:25px;
+  padding-bottom: 10px;
+  max-width: 150px;
   color: white;
+  text-align:center;
 }
 
 .arrow {
   position: absolute;
   background: #719196;
-  top: -4px;
-  left: 5px;
+  top: -5px;
+  left: 4px;
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
 }
+

@@ -1,0 +1,7 @@
+.hover{
+    align-items: center;
+}
+.hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
