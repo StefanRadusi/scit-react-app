@@ -1,0 +1,9 @@
+.menu-pages-hideButton-div {
+    float:right;
+}
+.menu-pages-hideButton {
+    width:24px;
+    height:24px;
+    border:none;
+    margin-right: 10px;
+}

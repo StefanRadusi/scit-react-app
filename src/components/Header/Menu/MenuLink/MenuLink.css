@@ -1,0 +1,16 @@
+.menu-link:hover {
+    text-decoration: underline;
+}
+.menu-link {
+    text-decoration: none;
+    color : white;
+}
+.menu-link:visited {
+    color: white;
+}
+.menu-link-row {
+    width:200px;
+    
+    margin-left:20px;
+
+}
