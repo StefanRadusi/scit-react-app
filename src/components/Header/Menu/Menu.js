@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './Menu.css';
 import { MenuPages } from './MenuPages/MenuPages';
 import { MenuButton } from './MenuButton/MenuButton';
+import { CloseMenuButton } from './MenuPages/CloseMenuButton/CloseMenuButton';
 
+ 
 export class Menu extends Component {
   state = {
     showMenuPages: false,
@@ -12,11 +14,17 @@ export class Menu extends Component {
     this.setState({ showMenuPages: !this.state.showMenuPages });
   };
 
+  handleCloseMenuButton = () => {
+    this.setState({showMenuPages:false});
+  };
+
   render() {
     return (
       <div className="menu-container">
         <MenuButton toggleMenuPages={this.toggleMenuPages}/>
         <MenuPages show={this.state.showMenuPages} />
+        <CloseMenuButton handleCloseMenuButton={this.handleCloseMenuButton}/>
+        <CloseMenuButton show={this.state.showMenuPages}/>
       </div>
     );
   }
