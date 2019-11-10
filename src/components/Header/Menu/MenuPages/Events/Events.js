@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Events.css';
 
-
-export function Events(props) {
-    return <div>Events {props.text}</div>;
+class Events extends Component {
+  render() {
+    return (
+      <div>
+        <PageButton name={{text: 'Events'}}/>
+      </div>
+    );
+  }
 }
+const PageButton = ({name}) => <div className='tab'>{name.text}</div>
+export default Events;

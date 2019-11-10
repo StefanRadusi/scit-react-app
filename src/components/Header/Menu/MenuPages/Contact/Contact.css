@@ -1,0 +1,8 @@
+.tab{
+       text-align: center;
+}
+
+.tab:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}

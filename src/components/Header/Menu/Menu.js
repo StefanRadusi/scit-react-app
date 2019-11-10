@@ -4,7 +4,6 @@ import { MenuPages } from './MenuPages/MenuPages';
 import { MenuButton } from './MenuButton/MenuButton';
 import { CloseMenuButton } from './MenuPages/CloseMenuButton/CloseMenuButton';
 
- 
 export class Menu extends Component {
   state = {
     showMenuPages: false,
@@ -14,7 +13,7 @@ export class Menu extends Component {
     this.setState({ showMenuPages: !this.state.showMenuPages });
   };
 
-  handleCloseMenuButton = () => {
+  eventCloseMenuButton = () => {
     this.setState({showMenuPages:false});
   };
 
@@ -23,9 +22,9 @@ export class Menu extends Component {
       <div className="menu-container">
         <MenuButton toggleMenuPages={this.toggleMenuPages}/>
         <MenuPages show={this.state.showMenuPages} />
-        <CloseMenuButton handleCloseMenuButton={this.handleCloseMenuButton}/>
+        <CloseMenuButton eventCloseMenuButton={this.toggleMenuPages}/>
         <CloseMenuButton show={this.state.showMenuPages}/>
       </div>
     );
   }
-}
+  }

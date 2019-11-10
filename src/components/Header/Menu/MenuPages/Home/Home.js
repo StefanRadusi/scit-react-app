@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Home.css';
 
-
-export function Home(props) {
-    return <div>Home {props.text}</div>;
+class Home extends Component {
+  render() {
+    return (
+      <div>
+        <PageButton name={{text: 'Home'}}/>
+      </div>
+    );
   }
+}
+const PageButton = ({name}) => <div className='tab'>{name.text}</div>
+export default Home;

@@ -3,9 +3,11 @@
   background: #719196;
   top: 55px;
   left: 5px;
-  padding-top: 40px;
-  max-width: 300px;
+  padding-top: 35px;
+  padding-bottom: 5px;
+  width: 80px;
   color: white;
+
 }
 
 .arrow {

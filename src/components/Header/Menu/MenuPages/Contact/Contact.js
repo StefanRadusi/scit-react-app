@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Contact.css';
 
-
-export function Contact(props) {
-  return <div>Contact {props.text}</div>;
+class Contact extends Component {
+  render() {
+    return (
+      <div>
+        <PageButton name={{text: 'Contact'}}/>
+      </div>
+    );
   }
-  
+}
+const PageButton = ({name}) => <div className='tab'>{name.text}</div>
+export default Contact;

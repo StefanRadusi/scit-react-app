@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Useful.css';
 
-
-export function Useful(props) {
-    return <div>Useful {props.text}</div>;
+class Useful extends Component {
+  render() {
+    return (
+      <div>
+        <PageButton name={{text: 'Useful'}}/>
+      </div>
+    );
   }
+}
+const PageButton = ({name}) => <div className='tab'>{name.text}</div>
+export default Useful;
